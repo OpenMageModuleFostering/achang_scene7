@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<layout>
+    <PRODUCT_TYPE_scene7_product>
+       <label>Catalog Scene7 Product View (Scene7)</label>
+        <reference name="head">
+            <action method="addJs"><script>jquery/jquery-1.4.2.min.js</script></action>
+            <action method="addJs"><script>jquery/jquery-noconflict.js</script></action>
+            <action method="addJs"><script>jquery/jquery.ajaxmanager.js</script></action>
+            <action method="addCss"><stylesheet>css/scene7.css</stylesheet></action>
+        </reference>
+        <reference name="product.info">
+            <action method="setTemplate">
+                <template>scene7/catalog/product/view.phtml</template>
+            </action>
+            
+            <block type="catalog/product_view_type_simple" name="product.info.simple" as="product_type_data" template="catalog/product/view/type/default.phtml">
+                <block type="core/text_list" name="product.info.simple.extra" as="product_type_data_extra" translate="label">
+                    <label>Product Extra Info</label>
+                </block>
+            </block>
+             <!-- <remove name="product.info.media"/> -->
+        </reference>
+        
+                
+
+        <reference name="product.info.options">
+            <action method="setTemplate">
+                <template>scene7/catalog/product/view/options.phtml</template>
+            </action>
+        </reference>
+        
+    </PRODUCT_TYPE_scene7_product>
+
+    <checkout_cart_index>
+        <reference name="checkout.cart">
+            <action method="addItemRender">
+	            <type>scene7_product</type>
+	            <block>scenescene7/cart_item_renderer_scene7</block>
+	            <template>scene7/checkout/cart/scene7.phtml</template>
+            </action>
+        </reference>
+    </checkout_cart_index>
+
+</layout>
+
+

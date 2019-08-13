@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<layout>
+    <scenescene7_admin_adminhtml_attribute_index>
+        <reference name="content">
+            <block type="scenescene7/adminhtml_attribute" name="attribute" />
+        </reference>
+    </scenescene7_admin_adminhtml_attribute_index>
+</layout>

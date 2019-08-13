@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<config>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <catalog>
+                        <children>
+                            <scenescene7 translate="title" module="scenescene7">
+                                <title>Scene7</title>
+                                <sort_order>15</sort_order>
+                            </scenescene7>
+                        </children>
+                   </catalog>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+    <menu>
+        <catalog>
+            <children>
+                <scenescene7 translate="title" module="scenescene7">
+                    <title>Scene7</title>
+                    <sort_order>30</sort_order>
+                    <children>
+                        <Sceneattribute translate="title" module="scenescene7">
+                            <title>Scene7 Attribute</title>
+                            <action>scenescene7_admin/adminhtml_attribute/index/</action>
+                        </Sceneattribute>
+                    </children>
+                </scenescene7>
+            </children>
+        </catalog>
+    </menu>
+</config>

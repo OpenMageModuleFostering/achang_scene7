@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Achang_Scene7",
+    "type": "magento-module",
+    "license": "OSL-v3.0",
+    "homepage": "",
+    "description": "The scene7 extension help you to use adobe scene7 to customize product on magento",
+    "authors": [
+    {
+        "name": "Minglong Li",
+        "email": "magento@achang.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

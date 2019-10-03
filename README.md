@@ -1,3 +1,5 @@
+
+
 ## Original Package Description
 
 The scene7 extension help you to use adobe scene7 to customize product on magento
